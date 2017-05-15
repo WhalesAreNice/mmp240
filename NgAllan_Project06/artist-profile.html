@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Artist Profile Page</title>
+            <link rel="stylesheet" href="css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <nav>
+                    <ul class="top-nav" id="my-top-nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
+                    </ul>
+                </nav>
+                <div class="artist">
+                    <h1>Ai Wei Wei</h1>
+                    <div id="portrait">
+                        <img src="images/ai-wei-wei/ai-wei-wei_portrait.jpg" alt="ai-wei-wei's portrait">
+                    </div> <!-- portrait -->
+                    <div class="quote">
+                    <p>“During my detention, the conditions were very restrictive, but the guards would often secretly ask me to sing for them. Being in that environment makes me realize that for these people, the only available release or means to kill time, is music."</p>
+                </div> <!-- quote -->
+                </div><!-- artist -->
+                <div class="slideshow">
+                    <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_bang.jpg" alt="ai-wei-wei-bang">
+                </div>
+                <div class="info">
+                    <p>The single “Dumbass”, premiered last month along with its music video, is included in the album. “The Divine Comedy” features six tracks with vocals and lyrics by Ai Weiwei, and music by Zuoxiao Zuzhou. Each song is a different take of Ai’s newfound channel for expression through music. The album includes commentaries on current events (Just Climb the Wall, Hotel USA), documentations of real dialogues (Chaoyang Park, Laoma Tihua), and personal reflections (Give Tomorrow Back to Me, Dumbass). The full album crosses musical genres with influences from pop, rock, punk and heavy metal, and takes us on a journey through Ai’s experience with the conditions of China.</p>
+                </div> <!-- info -->
+                <div class="info2">
+                    <p><a href="https://fakecase.com/">FakeCase.com</a> is the definitive source for information on the Chinese authorities’ “tax case” against Ai Weiwei, the Chinese artist who was secretly detained for 81 days from April 3 to June 22, 2011. The charges of tax evasion, online dissemination of pornography, and bigamy that were levied against Ai are widely perceived as political retaliation for his outspoken criticism of the government.</p>
+                </div><!-- info -->
+                
+                <div class="contacts">
+                    <ul class="contact_list">
+                        <li><a href="#"><img src="images/logos/twitter.png" alt="twitter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/facebook.png" alt="facebook logo"></a></li>
+                        <li><a href="#"><img src="images/logos/instagram.png" alt="instagram logo"></a></li>
+                        <li><a href="#"><img src="images/logos/newsletter.png" alt="newsletter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/press.png" alt="press logo"></a></li>
+                        <li><a href="#"><img src="images/logos/youtube.png" alt="youtube logo"></a></li>
+                    </ul>
+                </div> <!-- contacts -->
+            </div> <!-- container -->
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("my-top-nav");
+                    if (x.className === "top-nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "top-nav";
+                    }
+                }
+            </script> <!-- nav script -->
+        </body>
+    </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Artist Profile Page</title>
+            <link rel="stylesheet" href="css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <nav>
+                    <ul class="top-nav" id="my-top-nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="works.html">Artists</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
+                    </ul>
+                </nav>
+                
+                <h1>List of Artists</h1>
+                
+                <button class="accordion thefirst">Ai Wei Wei</button>
+                <div class="panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Alma Thomas</button>
+                <div class="panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Ana Mendieta</button>
+                <div class="panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+                
+                <button class="accordion">Carrie Mae Weems</button>
+                <div class="panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+                
+                
+                
+                <div class="contacts">
+                    <ul class="contact_list">
+                        <li><a href="#"><img src="images/logos/twitter.png" alt="twitter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/facebook.png" alt="facebook logo"></a></li>
+                        <li><a href="#"><img src="images/logos/instagram.png" alt="instagram logo"></a></li>
+                        <li><a href="#"><img src="images/logos/newsletter.png" alt="newsletter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/press.png" alt="press logo"></a></li>
+                        <li><a href="#"><img src="images/logos/youtube.png" alt="youtube logo"></a></li>
+                    </ul>
+                </div> <!-- contacts -->
+            </div> <!-- container -->
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("my-top-nav");
+                    if (x.className === "top-nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "top-nav";
+                    }
+                }
+            </script> <!-- nav script -->
+            
+            
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].onclick = function(){
+                        /* Toggle between adding and removing the "active" class,
+                        to highlight the button that controls the panel */
+                        this.classList.toggle("active");
+
+                        /* Toggle between hiding and showing the active panel */
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    }
+                }
+            </script> <!-- accordion script -->
+        </body>
+    </html>
