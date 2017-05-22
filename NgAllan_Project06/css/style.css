@@ -55,7 +55,7 @@ img{
 
 .mySlides{
     width:940px;
-    height:528px;
+    height:60%;
 }
 
 .artist #portrait{
@@ -248,6 +248,7 @@ button.accordion.active:after {
     .mySlides{
         width:100% !important;
         margin:0 auto;
+        height:400px !important;
     }
 }
 @media only screen and (max-width: 680px) {
@@ -353,6 +354,11 @@ button.accordion.active:after {
     .part2 .myslides{
         margin-bottom:5%;
     }
+    
+    .mySlides{
+    width:940px;
+    height:500px;
+}
     
     .hideButton{
         border:solid 2px;
