@@ -25,6 +25,39 @@ img{
     width:100%;
 }
 
+.w3-content {
+    margin:0 auto;
+}
+
+.work-portrait{
+    width:40%;
+    float:left;
+    border:3px double black;
+    margin-right:3%;
+    margin-top:3%;
+}
+
+.artist-description{
+    margin-right:0;
+    padding-right:0;
+}
+
+.artist-side{
+    width:54%;
+    float:right;
+}
+
+.artist-side a{
+    margin:10%;
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+.mySlides{
+    width:940px;
+    height:528px;
+}
+
 .artist #portrait{
     width:80%;
     margin:0 auto;
@@ -46,6 +79,7 @@ h2{
     padding-left:10%;
     font-size:1.8em;
     letter-spacing:1.5px;
+    margin-right:10%;
 }
 
 p{
@@ -64,6 +98,12 @@ p{
 
 .quote{
     font-style:italic;
+}
+
+.quoter{
+    font-style:italic;
+    margin-right:10%;
+    font-size:1.5em;
 }
 
 a{
@@ -190,11 +230,24 @@ button.accordion.active:after {
     }
     
     .hideButton{
-        border:2;
+        border:2px;
         background-color:#f2f2f2;
         margin-left:10%;
         font-size:1em;
         margin-bottom:5%;
+    }
+    
+    .work-portrait{
+        width:100%;
+    }
+    
+    .artist-side{
+        width:100%;
+    }
+    
+    .mySlides{
+        width:100% !important;
+        margin:0 auto;
     }
 }
 @media only screen and (max-width: 680px) {
@@ -297,6 +350,10 @@ button.accordion.active:after {
         margin-top:5%;
     }
     
+    .part2 .myslides{
+        margin-bottom:5%;
+    }
+    
     .hideButton{
         border:solid 2px;
         border-color:#b6b6b6;
@@ -344,6 +401,8 @@ button.accordion.active:after {
         color:#B22222;
     }
     
+    
+    
 }
 
 
@@ -359,7 +418,7 @@ button.accordion.active:after {
         width:1200px;
 /*        height:1668px;*/
         margin:0 auto;
-        background-color:white;
+/*        background-color:white;*/
     }
 }
 

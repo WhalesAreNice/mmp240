@@ -7,145 +7,15 @@
             <!-- responsive: meta tag viewport should make all of our site pages work on all devices and screen sizes -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+            
             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
             <script src="js/jquery.slides.min.js"></script>
-            <script>
-                $(function(){
-                  $("#slides").slidesjs({
-                    width: 940,
-                    height: 528
-                  });
-                });
-            </script>
-            
-            <script>
-                $(function(){
-                  $("#slides").slidesjs({
-                    play: {
-                      active: true,
-                        // [boolean] Generate the play and stop buttons.
-                        // You cannot use your own buttons. Sorry.
-                      effect: "slide",
-                        // [string] Can be either "slide" or "fade".
-                      interval: 2000,
-                        // [number] Time spent on each slide in milliseconds.
-                      auto: false,
-                        // [boolean] Start playing the slideshow on load.
-                      swap: true,
-                        // [boolean] show/hide stop and play buttons
-                      pauseOnHover: false,
-                        // [boolean] pause a playing slideshow on hover
-                      restartDelay: 2000
-                        // [number] restart delay on inactive slideshow
-                    }
-                  });
-                });
-            </script>
-            
             <style>
-                #slides {
-                      display: none;
-                }
-
-                #slides .slidesjs-navigation {
-                  margin-top:5px;
-                }
-
-                a.slidesjs-next,
-                a.slidesjs-previous,
-                a.slidesjs-play,
-                a.slidesjs-stop {
-                  background-image: url(img/btns-next-prev.png);
-                  background-repeat: no-repeat;
-                  display:block;
-                  width:12px;
-                  height:18px;
-                  overflow: hidden;
-                  text-indent: -9999px;
-                  float: left;
-                  margin-right:5px;
-                }
-
-                a.slidesjs-next {
-                  margin-right:10px;
-                  background-position: -12px 0;
-                }
-
-                a:hover.slidesjs-next {
-                  background-position: -12px -18px;
-                }
-
-                a.slidesjs-previous {
-                  background-position: 0 0;
-                }
-
-                a:hover.slidesjs-previous {
-                  background-position: 0 -18px;
-                }
-
-                a.slidesjs-play {
-                  width:15px;
-                  background-position: -25px 0;
-                }
-
-                a:hover.slidesjs-play {
-                  background-position: -25px -18px;
-                }
-
-                a.slidesjs-stop {
-                  width:18px;
-                  background-position: -41px 0;
-                }
-
-                a:hover.slidesjs-stop {
-                  background-position: -41px -18px;
-                }
-
-                .slidesjs-pagination {
-                  margin: 7px 0 0;
-                  float: right;
-                  list-style: none;
-                }
-
-                .slidesjs-pagination li {
-                  float: left;
-                  margin: 0 1px;
-                }
-
-                .slidesjs-pagination li a {
-                  display: block;
-                  width: 13px;
-                  height: 0;
-                  padding-top: 13px;
-                  background-image: url(img/pagination.png);
-                  background-position: 0 0;
-                  float: left;
-                  overflow: hidden;
-                }
-
-                .slidesjs-pagination li a.active,
-                .slidesjs-pagination li a:hover.active {
-                  background-position: 0 -13px
-                }
-
-                .slidesjs-pagination li a:hover {
-                  background-position: 0 -26px
-                }
-
-                #slides a:link,
-                #slides a:visited {
-                  color: #333
-                }
-
-                #slides a:hover,
-                #slides a:active {
-                  color: #9e2020
-                }
-
-                .navbar {
-                  overflow: hidden
+                .mySlides {
+                    display:none;
                 }
             </style>
+
         </head>
         <body>
             <div class="container">
@@ -158,18 +28,21 @@
                     <ul class="top-nav" id="my-top-nav">
                         <li><a class="active" href="#home">Home</a></li>
                         <li><a href="works.html">Artists</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
                     </ul>
                 </nav>
                 <h1>The Others In Art</h1>
-                <div id="slides">
-                    <img src="images/ai-wei-wei/ai-wei-wei_bang.jpg" alt="ai-wei-wei-bang">
-                    <img src="images/ai-wei-wei/ai-wei-wei_bicycles-taiwan-absent.jpg" alt="bicycles-taiwan-absent">
-                    <img src="images/ai-wei-wei/ai-wei-wei_colored-vases-01.jpg" alt="vase">
-                    <img src="images/ai-wei-wei/ai-wei-wei_crabs.jpg" alt="crabs">
-                </div> <!-- slides -->
+
+               
+               <div class="w3-content w3-section">
+                  <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_bang.jpg" style="width:100%" alt="ai-wei-wei-bang">
+                  <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_bicycles-taiwan-absent.jpg" style="width:100%" alt="ai-wei-wei-bicycles">
+                  <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_colored-vases-01.jpg" style="width:100%" alt="ai-wei-wei-colored-vase">
+                  <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_crabs.jpg" style="width:100%" alt="ai-wei-wei-crabs">
+                </div>
+               
                 <div class="about_site">
                    <h2>Introduction</h2>
                     <p>The Others In Art Website is a website dedicated to showcasing the art of artist, designers, photographers, architects etc., who are not often represented in the history books of art and design yet. The site serves as a web gallery/art history/contemporary arts website.</p>
@@ -186,7 +59,7 @@
                 </div> <!-- section1 -->
                 <div class="section2">
                     <div class="col-sm-3">
-                        <a href="#">
+                        <a href="artists/almathomas_profile.html">
                             <img src="images/alma-thomas/portrait.jpg" alt="Alma Thomas's portrait">
                             <h2>Alma Thomas &#10148;</h2>
                         </a>
@@ -194,7 +67,7 @@
                 </div> <!-- section2 -->
                 <div class="section3">
                     <div class="col-sm-3">
-                        <a href="#">
+                        <a href="artists/anamendieta_profile.html">
                             <img src="images/ana-mendieta/ana-mendieta-portrait.jpg" alt="Ana Mendieta's portrait">
                             <h2>Ana Mendieta &#10148;</h2>
                         </a>
@@ -202,7 +75,7 @@
                 </div> <!-- section3 -->
                 <div class="section4">
                     <div class="col-sm-3">
-                        <a href="#">
+                        <a href="artists/carriemaeweems_profile.html">
                             <img src="images/carrie-mae-weems/carrie-mae-weems-portrait-of-a-woman-who-has-fallen-from-grace.jpg" alt="Carrie Mae Weems' portrait">
                             <h2>Carrie Mae Weems &#10148;</h2>
                         </a>
@@ -228,6 +101,23 @@
                     } else {
                         x.className = "top-nav";
                     }
+                }
+            </script>
+            
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 4000); // Change image every 4 seconds
                 }
             </script>
             

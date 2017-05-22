@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Artist Profile Page</title>
+            <link rel="stylesheet" href="css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <nav>
+                    <ul class="top-nav" id="my-top-nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="works.html">Artists</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
+                    </ul>
+                </nav>
+                
+                <h1>About Us</h1>
+                
+                <h2>About The Others in Art</h2>
+                
+                <p>The Others in Art considers itself to be a place that fuels diverse creativity, ignites the minds, and provides inspiration for those seeking a profession in arts, or simply to inspire. The Others in Art is dedicated to fostering a conversation between the past and the present, the established and the experimental. Our goal is to give exposure to voices not often heard or seen in the arts.</p>
+                
+                <p>The Others in Art was founded in 2016 as an educational web gallery by students at the Borough of Manhattan Community College. Central to its mission is to encourage an ever deeper understanding and enjoyment of art of the past and the present created by a diverse local, national and international audience that it serves and represents.</p>
+                
+                <h2 class="quoter">"We hope to foster and continue to be there for the people who love art and design, create it and tinker with it. Art for the people by the people."</h2>
+                
+                <h2>Contact Information for The Others in Arts</h2>
+                
+                <p>The Others in Art</p>
+                <p>Borough of Manhattan Community College</p>
+                <p>199 Chamber Street</p>
+                <p>Room S622</p>
+                <p>212-123-4567</p>
+                <p>info@othersinart.com</p>
+                
+                
+                
+                <div class="contacts">
+                    <ul class="contact_list">
+                        <li><a href="#"><img src="images/logos/twitter.png" alt="twitter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/facebook.png" alt="facebook logo"></a></li>
+                        <li><a href="#"><img src="images/logos/instagram.png" alt="instagram logo"></a></li>
+                        <li><a href="#"><img src="images/logos/newsletter.png" alt="newsletter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/press.png" alt="press logo"></a></li>
+                        <li><a href="#"><img src="images/logos/youtube.png" alt="youtube logo"></a></li>
+                    </ul>
+                </div> <!-- contacts -->
+            </div> <!-- container -->
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("my-top-nav");
+                    if (x.className === "top-nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "top-nav";
+                    }
+                }
+            </script> <!-- nav script -->
+            
+            
+            
+        </body>
+    </html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Artist Profile Page</title>
+            <link rel="stylesheet" href="css/style.css">
+<!--            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+            <style>
+                .mySlides {
+                    width:100%; !important;
+                    margin:0 auto !important;
+                    height:auto !important;
+                    
+                }
+                .w3-container{
+                    padding:0.01em 16px
+                }
+                .w3-container:after,.w3-container:before{
+                    content:"";display:table;clear:both;
+                }
+                .w3-content{max-width:980px;margin:auto}.w3-rest{
+                    overflow:hidden;
+                }
+                .w3-row-padding:after,.w3-row-padding:before{content:"";display:table;clear:both;
+                }
+                .w3-col.s4{
+                    width:33.33333%;
+                }
+                .w3-col{
+                    float:left;width:100%;
+                }
+                .w3-opacity{
+                    opacity:0.60;
+                }
+                .w3-hover-opacity-off:hover{
+                    opacity:1;
+                }
+                .w3-section{
+                    margin-top:16px!important;margin-bottom:16px!important;
+                }
+                .demo{
+                    
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <nav>
+                    <ul class="top-nav" id="my-top-nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="works.html">Artists</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
+                    </ul>
+                </nav>
+                
+                <h1>Gallery</h1>
+                
+                <div class="w3-content" style="max-width:1200px">
+                  <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_moon-chest.jpg" alt="ai-wei-wei-moon">
+                  <img class="mySlides" src="images/alma-thomas/alma-thomas-cherry-blosson-symphony.jpg" alt="alma-thomas-cherry">
+                  <img class="mySlides" src="images/ana-mendieta/ana-mendieta_body-tracks-1974-01.jpg" alt="ana-mendieta-bodytracks">
+                  <img class="mySlides" src="images/alma-thomas/alma-thomas-red-azaleas-singing.jpg" alt="alma-thomas-red-azaleas">
+                  <img class="mySlides" src="images/carrie-mae-weems/carrie-mae-weems-from-the-kitchen-table-03.jpg" alt="carrie-mae-weems-kitchen">
+                  <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_colored-vases.jpg" alt="ai-wei-wei-vase">
+
+                  <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/ai-wei-wei/ai-wei-wei_moon-chest.jpg"  onclick="currentDiv(1)" alt="ai-wei-wei-moon">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/alma-thomas/alma-thomas-cherry-blosson-symphony.jpg"  onclick="currentDiv(2)" alt="alma-thomas-cherry">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/ana-mendieta/ana-mendieta_body-tracks-1974-01.jpg"  onclick="currentDiv(3)" alt="ana-mendieta-bodytracks">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/alma-thomas/alma-thomas-red-azaleas-singing.jpg"  onclick="currentDiv(4)" alt="alma-thomas-red-azaleas">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/carrie-mae-weems/carrie-mae-weems-from-the-kitchen-table-03.jpg"  onclick="currentDiv(5)" alt="carrie-mae-weems-kitchen">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/ai-wei-wei/ai-wei-wei_colored-vases.jpg"  onclick="currentDiv(6)" alt="ai-wei-wei-vase">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <div class="contacts">
+                    <ul class="contact_list">
+                        <li><a href="#"><img src="images/logos/twitter.png" alt="twitter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/facebook.png" alt="facebook logo"></a></li>
+                        <li><a href="#"><img src="images/logos/instagram.png" alt="instagram logo"></a></li>
+                        <li><a href="#"><img src="images/logos/newsletter.png" alt="newsletter logo"></a></li>
+                        <li><a href="#"><img src="images/logos/press.png" alt="press logo"></a></li>
+                        <li><a href="#"><img src="images/logos/youtube.png" alt="youtube logo"></a></li>
+                    </ul>
+                </div> <!-- contacts -->
+            </div> <!-- container -->
+            
+            
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+
+                    function currentDiv(n) {
+                      showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                         dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                      }
+                      x[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " w3-opacity-off";
+                    }
+                </script> <!-- gallery script -->
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("my-top-nav");
+                    if (x.className === "top-nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "top-nav";
+                    }
+                }
+            </script> <!-- nav script -->
+            
+            
+            
+        </body>
+    </html>
